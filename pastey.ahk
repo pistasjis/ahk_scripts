@@ -18,7 +18,7 @@ Loop {                      ; Add a number after "Loop" if you want it to loop a
     Loop 9 {                ; The amount of messages it sends before waiting (default = 9)
         SendInput ^v   ; ^v pastes from clipboard
         SendInput {Enter}
-        Sleep, 0
+        Sleep, 100
         if not SpamLoop
             break
     }
